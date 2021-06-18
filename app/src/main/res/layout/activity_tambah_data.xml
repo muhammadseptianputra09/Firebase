@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TambahData">
+
+
+    <EditText
+        android:id="@+id/edkode"
+        android:layout_width="352dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="208dp"
+        android:ems="10"
+        android:hint="Kode Barang"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ednama"
+        android:layout_width="353dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:hint="Nama Barang"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edkode"
+        app:layout_constraintStart_toStartOf="@+id/edkode"
+        app:layout_constraintTop_toBottomOf="@+id/edkode" />
+
+    <Button
+        android:id="@+id/Btnsubmit"
+        android:layout_width="166dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="84dp"
+        android:text="Submit Data"
+        app:layout_constraintEnd_toEndOf="@+id/ednama"
+        app:layout_constraintStart_toStartOf="@+id/ednama"
+        app:layout_constraintTop_toBottomOf="@+id/ednama" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
